@@ -5,13 +5,15 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>edu.praktikum</groupId>
-    <artifactId>Sprint_Jenkins</artifactId>
+    <artifactId>Final_Practice</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven-compiler-plugin.version>3.13.0</maven-compiler-plugin.version>
+        <maven-surefire-plugin>3.5.2</maven-surefire-plugin>
         <aspectj.version>1.9.7</aspectj.version>
         <allure.version>2.22.2</allure.version>
     </properties>
@@ -53,15 +55,15 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.13.0</version>
                 <configuration>
-                    <source>${java.version}</source>
-                    <target>${java.version}</target>
+                    <source>3.13.0</source>
+                    <target>3.13.0}</target>
                 </configuration>
             </plugin>
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.3.1</version>
+                <version>3.5.2</version>
                 <configuration>
                     <testFailureIgnore>true</testFailureIgnore>
                     <argLine>
